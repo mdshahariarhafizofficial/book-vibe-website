@@ -9,7 +9,12 @@ const router = createBrowserRouter([
       path: '/',
       Component: Root,
       children: [
-        { index: true, path: '/', Component:Home }
+        { 
+            index: true,
+            loader: ()=> fetch('booksData.json') ,
+            path: '/', 
+            Component:Home 
+        }
       ],
       errorElement: <ErrorPage></ErrorPage>,
     }
