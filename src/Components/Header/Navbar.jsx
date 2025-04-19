@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
             <img className="w-10" src={logo} alt="" />
-            <a className="text-4xl font-bold">Book Vibe</a>
+            <a href="/" className="text-4xl font-bold">Book Vibe</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
